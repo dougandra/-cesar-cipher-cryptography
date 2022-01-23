@@ -39,14 +39,14 @@
 
 
     width: 250px;
-    height: 200px;
+    height: 180px;
      
   }
 
   #fraseAlt{
 
     width: 250px;
-    height: 200px;
+    height: 160px;
      
 
   }
@@ -178,17 +178,12 @@
     margin-left: 19%;
   }
 
-  footer {
-    position:sticky;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 25px;
-    gap: 23px;
-    
+  .imgFt{
+
+   display: flex;
+   justify-content: flex-start;
+
+
   }
   
   .copyright {
