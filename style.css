@@ -179,9 +179,10 @@
     margin-left: 19%;
   }
 
-  .imgFt{
+  footer{
 
    display: flex;
+   font-size: 14px;
    justify-content: center;
    text-decoration: none;
    color: black;
