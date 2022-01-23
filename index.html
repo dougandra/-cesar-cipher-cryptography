@@ -11,18 +11,19 @@
 
 </head>
 
-<body class="fundoSite">
+<body>
     <header>
         <div>
-            <h1>Passinho do Romano</h1>
+            <h1>PASSINHO DO ROMANO</h1>
+            <h2 class="subtitle_title">CODIFICANDO EM CIFRA DE CÉSAR E BASE 64</h2>
         </div>
 
     </header>
 
     <main>
         <section class="container">
-            <div class="menuEscolha">
-                <div class="menu">
+            <div>
+                <div>
                     <div class="img_logo"><img src="Assets/logo.png" alt="cesar_image"></div>
                     <select id="escolhaCod" onchange="mostraDiv(this)">
                         <option>Selecione a codificação:</option>
@@ -33,10 +34,15 @@
             </div>
 
             <div class="conteudo">
-
-                    <div id="cifraCesar" class="corpo" style="display:none;">
-                        <p><b>Cifra de César</b><span>Insira seu texto e chave</span></p>
-                        <textarea id="frase" rows="20" cols="33" placeholder="Digite aqui!" required></textarea>
+                     
+                   
+                    <div id="cifraCesar" class="corpo" style="display:none">
+                        <p class="text"><strong>Bem vindo(a) ao mundo da criptografia.</strong> Iremos converter
+                           frases em códigos secretos usando a <strong>Cifra de César ou
+                           Base 64.</strong>
+                        </p>
+                        <p><b>Instruções:</b> escreva qualquer palavra ou frase, o intervalo e clique em codificar ou decodificar.</p>
+                        <textarea id="frase" rows="20" cols="33" placeholder="  Insira aqui seu texto ou palavra:" required></textarea>
                         <input type="number" id="chave" maxlength="2" max="999" min="1" placeholder="00" required>
 
                         <input type="radio" id="cifraCesarCriptRadio" name="cifraCesarName" />
@@ -45,18 +51,23 @@
                         <input type="radio" id="cifraCesarDecriptRadio" name="cifraCesarName" />
                         <label for="cifraCesarDecriptRadio">Decodificar</label>
 
-                        </br><input type="submit" id="cifraCesarCript" value="Codificar Mensagem!" style="display: none;"
+                        </br><input type="submit" id="cifraCesarCript" value="Codificar" style="display: none;"
                             onclick="cifraCesarCriptografar()" />
-                        <input type="submit" id="cifraCesarDecript" value="Decodificar Mensagem!" style="display: none;"
+                        <input type="submit" id="cifraCesarDecript" value="Decodificar" style="display: none;"
                             onclick="cifraCesarCriptografarAlt()" />
 
                         <div id="resultado"></div>
                     </div>
 
-                    <div id="base64" class="corpo" style="display:none;">
-                        <p><b>Base 64</b><span>Digite o texto</span></p>
+                    <div id="base64" class="corpo" style="display:none">
 
-                        <textarea id="fraseAlt" rows="20" cols="33" placeholder="Digite aqui!" required></textarea>
+                        <p class="text"><strong>Bem vindo(a) ao mundo da criptografia.</strong> Iremos converter
+                            frases em códigos secretos usando a <strong>Cifra de César ou
+                            Base 64.</strong>
+                         </p>
+                        <p><b>Instruções:</b> escreva qualquer palavra ou frase, o intervalo e clique em codificar ou decodificar.</p>
+
+                        <textarea id="fraseAlt" rows="20" cols="33" placeholder="  Insira aqui seu texto ou palavra:" required></textarea>
 
                         <input type="radio" class="radiobt" id="base64criptadaRadio" name="base64">
                         <label for="base64criptadaRadio">Codificar</label>
