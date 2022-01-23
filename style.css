@@ -16,6 +16,7 @@
     background-image:url('./Assets/background2.png');
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
   }
   
   header {
@@ -181,13 +182,13 @@
   .imgFt{
 
    display: flex;
-   justify-content: flex-start;
+   justify-content: center;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   margin-top: 59px;
+   margin-bottom: 5px;
 
 
   }
   
-  .copyright {
-    color: rgb(22, 22, 20);
-    font-size: 13px;
-    font-style: italic;
-  }
