@@ -52,6 +52,18 @@
 
   }
 
+  .til{
+
+     text-align: center;
+     background-color: rgba(0, 6, 56, 0.800);
+     width: 500px;
+     padding: 10px;
+     padding-bottom: 10px;
+     border-radius: 30px;
+     color: white;
+     border: 6px solid white;
+  }
+
   .frase{
 
 
